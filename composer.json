@@ -1,0 +1,48 @@
+{
+    "name": "hoangphi/google-2fa",
+    "description": "Google 2FA Authentication in Laravel",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "hoangphidev",
+        "google-authenticator",
+        "laravel",
+        "laravel-package",
+        "laravel-package-2fa",
+        "laravel-google-authenticator",
+        "google-2fa",
+        "google-authenticator-2fa"
+    ],
+    "homepage": "https://github.com/hoangphidev/google-2fa",
+    "authors": [
+        {
+            "name": "Phi Hoang",
+            "email": "hoangphi.dev@gmail.com",
+            "homepage": "https://github.com/hoangphidev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3|^7.0|^8.0",
+        "illuminate/support": "^5.8|^6|^7|^8",
+        "illuminate/database": "^5.8|^6|^7|^8",
+        "illuminate/console": "^5.8|^6|^7|^8"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "HoangPhi\\GoogleAuthenticator\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HoangPhi\\GoogleAuthenticator\\GoogleAuthenticatorServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true
+}
